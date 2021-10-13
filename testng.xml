@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="TestOnOpera" thread-count="6">
+        <parameter name="browserName" value="opera"></parameter>
+        <classes>
+            <class name="tests.SeverotekTestLogin"></class>
+        </classes>
+    </test>
+
+    <test name="TestOnChrome" thread-count="6">
+        <parameter name="browserName"  value="chrome"></parameter>
+        <classes>
+            <class name="tests.SeverotekTestLogin"></class>
+        </classes>
+    </test>
+
+<!--&lt;!&ndash;    <test name="TestOnIE" parallel="tests" thread-count="3">&ndash;&gt;-->
+<!--&lt;!&ndash;        <parameter name="browserName" value="ie"></parameter>&ndash;&gt;-->
+<!--&lt;!&ndash;        <classes>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="tests.SeverotekTestLogin"></class>&ndash;&gt;-->
+<!--&lt;!&ndash;        </classes>&ndash;&gt;-->
+<!--&lt;!&ndash;    </test>&ndash;&gt;-->
+
+    <test name="MainPageTestOnOpera" thread-count="6">
+        <parameter name="browserName" value="opera"></parameter>
+        <classes>
+            <class name="tests.SeverotekTestMainPage"></class>
+        </classes>
+    </test>
+
+
+    <test name="MainPageTestOnChrome" thread-count="6">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="tests.SeverotekTestMainPage"></class>
+        </classes>
+    </test>
+
+    <test name="BlogTestOnOpera" thread-count="6">
+        <parameter name="browserName" value="opera"></parameter>
+        <classes>
+            <class name="tests.SeverotekTestBlog"></class>
+        </classes>
+    </test>
+
+
+    <test name="BlogTestOnChrome" thread-count="6">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="tests.SeverotekTestBlog"></class>
+        </classes>
+    </test>
+
+</suite>
